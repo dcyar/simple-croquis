@@ -4,10 +4,43 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>croquis</title>
+    <title>Croquis</title>
   </head>
   <body>
-    <div id="app"></div>
+    <a-assets>
+      <img src="/src/assets/street.jpg" id="street" alt="street" />
+    </a-assets>
+    <a-scene background="color: #ECECEC">
+      <!-- <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9" shadow></a-box>
+      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E" shadow></a-sphere>
+      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D" shadow></a-cylinder> -->
+
+      <!-- Izquierda -->
+      <a-plane src="#street" position="-2 2 -12" rotation="0 90 0" width="4" height="4" color="#7BC8A4" shadow></a-plane>
+      <a-plane src="#street" position="-2 2 -8" rotation="0 90 0" width="4" height="4" color="#7BC8A4" shadow></a-plane>
+      <a-plane src="#street" position="-2 2 -4" rotation="0 90 0" width="4" height="4" color="#7BC8A4" shadow></a-plane>
+      <a-plane src="#street" position="-2 2 0" rotation="0 90 0" width="4" height="4" color="#7BC8A4" shadow></a-plane>
+      <a-plane src="#street" position="-2 2 4" rotation="0 90 0" width="4" height="4" color="#7BC8A4" shadow></a-plane>
+      <a-plane src="#street" position="-4 2 6" rotation="0 0 0" width="4" height="4" color="#7BC8A4" shadow></a-plane>
+      <a-plane src="#street" position="-8 2 6" rotation="0 0 0" width="4" height="4" color="#7BC8A4" shadow></a-plane>
+
+      <!-- Derecha -->
+      <a-plane src="#street" position="2 2 -12" rotation="0 -90 0" width="4" height="4" color="#7BC8A4" shadow></a-plane>
+      <a-plane src="#street" position="2 2 -8" rotation="0 -90 0" width="4" height="4" color="#7BC8A4" shadow></a-plane>
+      <a-plane src="#street" position="2 2 -4" rotation="0 -90 0" width="4" height="4" color="#7BC8A4" shadow></a-plane>
+      <a-plane src="#street" position="2 2 0" rotation="0 -90 0" width="4" height="4" color="#7BC8A4" shadow></a-plane>
+      <a-plane src="#street" position="2 2 4" rotation="0 -90 0" width="4" height="4" color="#7BC8A4" shadow></a-plane>
+      <a-plane src="#street" position="4 2 6" rotation="0 0 0" width="4" height="4" color="#7BC8A4" shadow></a-plane>
+      <a-plane src="#street" position="8 2 6" rotation="0 0 0" width="4" height="4" color="#7BC8A4" shadow></a-plane>
+      <a-plane src="#street" position="12 2 6" rotation="0 0 0" width="4" height="4" color="#7BC8A4" shadow></a-plane>
+
+      <!-- <a-text value="Holaa" position="0 0.5 -2" rotation="0 0 0"></a-text> -->
+      
+      <!-- Piso -->
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="20" color="#7BC8A4" shadow></a-plane>
+
+      <a-plane position="1 0 8" rotation="-90 90 0" width="4" height="24" color="#7BC8A4" shadow></a-plane>
+    </a-scene>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
